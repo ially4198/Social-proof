@@ -1,0 +1,146 @@
+body{
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-position:0 -400px, 250px 150px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: League Spartan;
+    font-size: 15px;
+}
+.top{
+    display: flex;
+    width: 966px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 280px;
+}
+.content1{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.text h1{
+    width: 310px;
+    font-weight: 700;
+    font-size: 50px;
+    color: hsl(300, 43%, 22%);
+}
+.text p{
+    width: 350px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: hsl(303, 10%, 53%);
+    
+}
+.star{
+    display: flex;
+
+}
+.star img{
+    width: 20px;
+    height: 20px;
+
+}
+#rate1, #rate2, #rate3 h4{
+    color: hsl(300, 43%, 22%);
+}
+#rate1, #rate2, #rate3{
+    width: 350px;
+    height: 50px;
+    background-color: hsl(300, 24%, 96%);
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.rate{
+    
+   display: flex;
+    flex-direction: column;
+    
+   
+}
+#rate1{
+    margin-left: -80px;
+}
+#rate2{
+    margin-left: -40px;
+}
+.bottom{
+    width: 966px;
+    display: flex;
+    gap: 20px;
+   
+}
+.bottom img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.bottom h4{
+    padding: 0;
+    margin:0 0 0 0;
+    
+}
+#profile{
+   display: flex;
+   flex-direction: column;
+   background-color:hsl(300, 43%, 22%) ;
+   width: 310px;
+   height: 200px;
+   border-radius: 7px;
+   font-size: 15px;
+   font-weight: 600;
+}
+@media screen and (max-width:600px){
+    .top{
+        flex-direction: column;
+        width: 350px;
+        gap: 0;
+        text-align: center;
+        padding-top: 900px;
+    }
+    .bottom{
+        flex-direction: column;
+        width: 350px;
+      margin-left: 30px;
+      padding-bottom: 200px;
+    }
+    #rate1{
+        margin-left: 0;
+    }
+    #rate2{
+        margin-left: 0;
+    }
+    #rate1, #rate2, #rate3{
+        width: 310px;
+        height: 70px;
+    }
+    .text p{
+        width: 310px;
+    }
+    .text h1{
+        width: 310px;
+    }
+    #rate1, #rate2, #rate3{
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 15px;
+        
+    }
+    .star img{
+        margin-top: 20px;
+        margin-bottom: -15px;
+    }
+}
